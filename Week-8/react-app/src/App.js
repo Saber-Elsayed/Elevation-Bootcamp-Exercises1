@@ -2,19 +2,18 @@
 // import "./App.css";
 
 function App() {
-  const personContainer = (name, email) => {
-    let greatName = `The Great ${name}`;
+  const getMorningGreeting = () => {};
+  const getEveningGreeting = () => {};
 
-    return (
-      <div className="person">
-        <h4>{greatName}</h4>
-        <p>
-          Contact at: <a href={email}>email</a>
-        </p>
+  return (
+    <div>
+      <div className="ex-space">
+        <h4 className="ex-title">Spot-check 2</h4>
+        <div className="exercise" id="spotcheck-2">
+          {/* your code here */}
+        </div>
       </div>
-    );
-  };
-
-  return personContainer("Louisa", "l@elo.com");
+    </div>
+  );
 }
 export default App;
