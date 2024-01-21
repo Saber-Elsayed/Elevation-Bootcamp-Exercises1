@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from "./logo.svg";
+// import "./App.css";
 
 function App() {
+  const getStuff = () => "I use React";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="ex-space">
+        <h4 className="ex-title">Spot-check 1 {getStuff()}</h4>
+        <div className="exercise" id="spotcheck-1">
+          {/* your code here */}
+        </div>
+      </div>
     </div>
   );
 }
