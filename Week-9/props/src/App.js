@@ -1,22 +1,25 @@
 import "./App.css";
 import Users from "./Users";
-function App() {
-  const users = [
-    { name: "Alice", age: 25 },
-    { name: "Bob", age: 30 },
-    { name: "Charlie", age: 22 },
-  ];
+function Company(props) {
+  let explodedRevenue = props.revenue * 100;
+
   return (
-    <div className="App">
-      <div>
-        {/* <Users name={users[0].name} age={users[0].age} /> */}
-        <Users name={users[0].name} age={users[0].age} />
-        {users.map((user) => (
-          <Users name={user.name} age={user.age} />
-        ))}
-      </div>
+    <div>
+      <p>
+        {props.name} earns {explodedRevenue}
+      </p>
     </div>
   );
+}
+
+export function App() {
+  let companies = [
+    { name: "Tesla", revenue: 140 },
+    { name: "Microsoft", revenue: 300 },
+    { name: "Google", revenue: 600 },
+  ];
+
+  return <Company name={companies[0].name} revenue={companies[0].revenue} />;
 }
 
 export default App;
