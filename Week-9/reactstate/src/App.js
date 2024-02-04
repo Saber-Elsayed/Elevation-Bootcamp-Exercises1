@@ -3,6 +3,7 @@ import SpotCheck1 from "./components/events";
 import UseState from "./components/usestate";
 // import Company from "./components/Company";
 import Apps from "./components/state as state";
+import Application from "./components/spot check4";
 function App() {
   // let companiesData = [
   //   { name: "Tesla", revenue: 140 },
@@ -19,6 +20,7 @@ function App() {
           <Company name={company.name} revenue={company.revenue}></Company>
         ))}
       </div> */}
+      <Application />
       <Apps />
       <SpotCheck1 />
       <UseState />
