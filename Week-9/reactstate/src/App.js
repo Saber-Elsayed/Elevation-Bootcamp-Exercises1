@@ -4,6 +4,8 @@ import UseState from "./components/usestate";
 // import Company from "./components/Company";
 import Apps from "./components/state as state";
 import Application from "./components/spot check4";
+import LikesApp from "./components/like";
+
 function App() {
   // let companiesData = [
   //   { name: "Tesla", revenue: 140 },
@@ -20,6 +22,7 @@ function App() {
           <Company name={company.name} revenue={company.revenue}></Company>
         ))}
       </div> */}
+      <LikesApp />
       <Application />
       <Apps />
       <SpotCheck1 />
