@@ -7,4 +7,5 @@ const SpotCheck1 = () => {
 
   return <button onMouseEnter={logHover}>Click me</button>;
 };
+
 export default SpotCheck1;
