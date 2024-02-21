@@ -86,3 +86,18 @@ const getDistributions = function (studentAnswers) {
 };
 
 getDistributions(studentAnswers);
+
+/**********EX5*************/
+// n is the number of recipients
+
+//The run time of getDistributions function is O(n) in worst case//
+const sendEmails = (email, recepients) =>
+  recepients.forEach((r) => r.sendEmail(email));
+
+const emailManager = function () {
+  let email = generateEmail();
+
+  $.get("/recepients", function (recepients) {
+    sendEmails(email, recepients);
+  });
+};
