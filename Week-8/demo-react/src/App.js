@@ -14,16 +14,16 @@ function App() {
         <input type="password" />
       </div>
       <div className="actions">
-        {signupBtn}
-        {loginBtn}
+        <Actionbtn id="signup" label="signup" />
+        <Actionbtn id="login" label="login" />
       </div>
     </div>
   );
 }
-const signupBtn = actionbtn({ id: "signup", label: "signup" });
-const loginBtn = actionbtn({ id: "login", label: "login" });
+// const signupBtn = actionbtn({ id: "signup", label: "signup" });
+// const loginBtn = actionbtn({ id: "login", label: "login" });
 
-function actionbtn(props) {
+function Actionbtn(props) {
   return <button id={props.id}>{props.label}</button>;
 }
 export default App;
