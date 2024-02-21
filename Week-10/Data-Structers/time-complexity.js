@@ -101,3 +101,22 @@ const emailManager = function () {
     sendEmails(email, recepients);
   });
 };
+
+/**********EX7*************/
+/// The run timw of findEmployeeSalary is O(1)///
+const employeeSalaries = {
+  ax01: 1300,
+  qs84: 840,
+  bg33: 2700,
+  // Add more employees here...
+};
+
+// Function to find the salary of an employee by their ID
+function findEmployeeSalary(employeeID) {
+  return employeeSalaries[employeeID];
+}
+
+// Example usage
+console.log(findEmployeeSalary("ax01")); // Output: 1300
+console.log(findEmployeeSalary("qs84")); // Output: 840
+console.log(findEmployeeSalary("bg33")); // Output: 2700
